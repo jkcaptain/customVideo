@@ -1,0 +1,260 @@
+/*!/static/global/_var.scss*/
+/*! Meizu Skin for jPlayer 2.9.2 ~    only for video but not audio */
+.video-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow: hidden;
+    opacity: 0.8;
+    z-index: 10001;
+    display: none;
+}
+
+.jp_close {
+    position: absolute;
+    left: 100%;
+    top: -35px;
+    background: url(./close_d9d2d0b.png) no-repeat;
+    width: 28px;
+    height: 28px;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.jp_title {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    color: #686868;
+    background: #1a1a1a;
+    padding-left: 28px;
+}
+
+.jp2 .jp_close {
+    width: 14px;
+    height: 14px;
+    background: url(./close2_043d840.png) no-repeat;
+    z-index: 2;
+}
+
+.jp_container {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -480px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    background-color: #eee;
+    z-index: 10002;
+    display: none;
+}
+
+.jp_container :focus {
+    outline: 0;
+}
+
+.jp_container button::-moz-focus-inner {
+    border: 0;
+}
+
+.video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.video-gui {
+    position: relative;
+    /*top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;*/
+    z-index: 1001;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.video-interface {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 56px;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+.video-progress {
+    overflow: hidden;
+    background-color: #ddd;
+}
+
+.video-progress {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+}
+
+.video-seek-bar {
+    width: 0;
+    height: 100%;
+    cursor: pointer;
+}
+
+.video-play-bar {
+    background-color: #27b3ef;
+    width: 0;
+    height: 100%;
+}
+
+.video-controls-holder {
+    position: relative;
+    clear: both;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.video-interface .video-controls {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    overflow: hidden;
+}
+
+.video-controls .video-play {
+    display: block;
+    width: 42px;
+    height: 44px;
+    margin: 3px auto 0;
+    padding: 0;
+    overflow: hidden;
+    text-indent: -999px;
+    border: 0;
+    cursor: pointer;
+}
+
+.video-play {
+    background: url(./images/meizu_player_fa98165.png) 10px 6px no-repeat;
+}
+
+.video-state-playing .video-play {
+    background: url(./images/meizu_player_fa98165.png) -30px 6px no-repeat;
+}
+
+.video-stop,
+.video-previous,
+.video-next {
+    width: 28px;
+    height: 28px;
+    margin-top: 6px;
+}
+
+.video-volume-controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 160px;
+    height: 50px;
+}
+
+.video-volume-controls button {
+    position: absolute;
+    overflow: hidden;
+    text-indent: -9999px;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+}
+
+.video-mute {
+    width: 35px;
+    height: 50px;
+    background: url(./images/meizu_player_fa98165.png) 0 -34px no-repeat;
+}
+
+.video-volume-bar {
+    position: absolute;
+    overflow: hidden;
+    background-color: #ddd;
+    top: 22px;
+    left: 36px;
+    width: 100px;
+    height: 5px;
+    cursor: pointer;
+}
+
+.video-volume-bar-value {
+    background-color: #27b3ef;
+    width: 0;
+    height: 5px;
+}
+
+.video-time {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: 50px;
+    color: gray;
+}
+
+.video-time {
+    font-size: 12px;
+}
+
+.video-current-time,
+.video-duration {
+    font-size: 16px;
+}
+
+.video-current-time {
+    color: #fff;
+    display: inline;
+}
+
+.video-duration {
+    display: inline;
+}
+
+.video-current-time {
+    margin-left: 20px;
+}
+
+.video-duration {
+    margin-right: 20px;
+    color: gray;
+}
+
+.video-no-solution {
+    padding: 5px;
+    font-size: 0.8em;
+    background-color: #eee;
+    border: 2px solid #009be3;
+    color: #000;
+    display: none;
+}
+
+.video-no-solution a {
+    color: #000;
+}
+
+.video-no-solution span {
+    font-size: 1em;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+}
+
+.vh {
+    overflow: hidden;
+}

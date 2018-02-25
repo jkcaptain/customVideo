@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>video</title>
+    <link rel="stylesheet" href="./video.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            outline: none;
+        }
+
+        #video-container {
+            position: relative;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="video-container"></div>
+
+    <script src="./video.js"></script>
+    <script>
+        var container = document.getElementById('video-container');
+        var video = new myVideo(container, 'https://cimg2.res.meizu.com/www/201707/small/brand.mp4')
+    </script>
+</body>
+
+</html>
